@@ -1,6 +1,8 @@
 // Firebase(the core Firebase SDK) is always required and must be listed first
 import firebase from "firebase";
 
+
+
 // Your web app's Firebase configuration
 // var firebaseConfig = {
 //     apiKey: "AIzaSyB7cyKN_ue9390iqtlHWN2t1p9g_BfxMwQ",

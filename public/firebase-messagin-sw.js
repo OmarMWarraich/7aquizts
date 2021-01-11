@@ -21,17 +21,17 @@
 // <!-- The core Firebase JS SDK is always required and must be listed first -->
 // <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
 
-// eslint-disable-next-line no-undef
-importScripts('https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js');
+
+importScripts('/__/firebase/8.2.2/firebase-app.js');
 
 // <!-- TODO: Add SDKs for Firebase products that you want to use
 //      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-// eslint-disable-next-line no-undef
-importScripts('https://firebase.google.com/docs/web/setup#available-libraries');
 
-// eslint-disable-next-line no-undef
-importScripts('https://www.gstatic.com/firebasejs/8.2.2/firebase-messaging.js');
+// importScripts('https://firebase.google.com/docs/web/setup#available-libraries');
+
+
+importScripts('/__/firebase/init.js');
 
 
   // Your web app's Firebase configuration
@@ -49,21 +49,4 @@ importScripts('https://www.gstatic.com/firebasejs/8.2.2/firebase-messaging.js');
   // eslint-disable-next-line no-undef
   const messaging = firebase.messaging();
 
-  messaging.setBackgroundMessageHandler(function(payload) {
-    console.log('[firebase-messaging-sw.js] Received background message ', payload);
-  
-    const notificationTitle = payload.data.title;
-    const notificationOptions = {
-      body: payload.data.body,
-      icon: '/firebase-logo.png'
-    };
-  
-    return self.registration.showNotification(notificationTitle,
-      notificationOptions);
-  });
-  
-  // eslint-disable-next-line no-restricted-globals
-  self.addEventListener('notificationclick', event => {
-    console.log(event)
-    return event;
-  });
+ 
