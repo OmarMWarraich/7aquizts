@@ -1,7 +1,9 @@
+
 import React, { useState } from 'react';
 import { QuestionCard } from './components/QuestionCard';
 import { fetchQuestions, Difficulty, QuestionState } from './API';
 import { GlobalStyle, Wrapper } from './App.styles';
+import firebase from 'firebase';
 
 const TOTAL_QUESTIONS = 10;
 
