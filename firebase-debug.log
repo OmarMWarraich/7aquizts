@@ -53,3 +53,54 @@ You're about to initialize a Firebase project in this directory:
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2021-01-11T15:40:28.737Z] ----------------------------------------------------------------------
+[debug] [2021-01-11T15:40:28.738Z] Command:       /usr/local/bin/firebase /home/remo/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-01-11T15:40:28.739Z] CLI Version:   8.15.1
+[debug] [2021-01-11T15:40:28.739Z] Platform:      linux
+[debug] [2021-01-11T15:40:28.739Z] Node Version:  v12.18.1
+[debug] [2021-01-11T15:40:28.799Z] Time:          Mon Jan 11 2021 20:40:28 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-01-11T15:40:28.799Z] ----------------------------------------------------------------------
+[debug] [2021-01-11T15:40:28.800Z] 
+[debug] [2021-01-11T15:40:28.831Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-11T15:40:28.832Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/remo/Desktop/Bootcamp2020/7aquiz/quizts
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-01-11T15:40:51.480Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2021-01-11T15:40:52.484Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 11 Jan 2021 15:40:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project quizapp-59e2f (QuizApp) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-01-11T15:41:20.749Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2021-01-11T15:41:21.040Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Mon, 11 Jan 2021 15:13:38 GMT","expires":"Mon, 11 Jan 2021 16:03:38 GMT","last-modified":"Thu, 07 Jan 2021 21:51:20 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"1662","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[debug] [2021-01-11T15:41:27.122Z] Error: EACCES: permission denied, open '/home/remo/Desktop/Bootcamp2020/7aquiz/quizts/build/index.html'
+    at Object.openSync (fs.js:458:3)
+    at Object.fs.openSync (pkg/prelude/bootstrap.js:487:32)
+    at Object.writeFileSync (fs.js:1355:35)
+    at Config.writeProjectFile (/home/remo/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/config.js:156:8)
+    at /home/remo/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/config.js:174:18
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
